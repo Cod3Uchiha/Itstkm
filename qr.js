@@ -13,8 +13,9 @@ const {
 	jidNormalizedUser,
 	Browsers,
 	delay,
-	makeInMemoryStore,
-} = require("maher-zubair-baileys");
+	//makeInMemoryStore,
+} = require("@whiskeysockets/baileys");
+const { makeInMemoryStore } = require('@rodrigogs/baileys-store');
 
 function removeFile(FilePath) {
 	if (!fs.existsSync(FilePath)) return false;
